@@ -9,8 +9,20 @@ body {
     background-color: black;
 }
 
-h1, h2, h3 {
+h1 {
     text-transform: capitalize;
+}
+
+.title {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.name {
+    text-transform: capitalize;
+    color: white;
+    font-style: italic;
 }
 
 .box {
