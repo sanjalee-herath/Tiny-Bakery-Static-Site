@@ -1,0 +1,193 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+h1, h2, h3 {
+    text-transform: capitalize;
+}
+
+.box {
+    flex: 1;
+    padding: 3%;
+}
+
+.navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid black;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: orange;
+    height: 4.25rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    font-size: 1.25rem;
+}
+
+.menu li {
+    margin-right: 0.9rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* hero section */
+
+.hero {
+    background-image: url("./images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 4.25rem;
+}
+
+.tagline-container {
+    padding-top: 10.5rem;
+    padding-left: 2rem;
+}
+
+.tagline {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-radius: 4%;
+    width: 60%;
+}
+
+.tagline h2 {
+    margin-bottom: 0;
+}
+
+.tagline p {
+    font-size: 1rem;
+    color: black;
+}
+
+@media only screen and (max-width: 850px) {
+    .hero {
+        display: flex;
+    }
+    .tagline-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo img {
+        display: none;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+}
+
+/* product section */
+
+.product {
+    background-color: lightblue;
+    padding: 5% 3%;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3%;
+}
+
+.product-container .box {
+    background-color: white;
+    text-align: center;
+}
+
+.product-container .box img {
+    width: 100%;
+    height: 90%;
+}
+
+@media only screen and (max-width: 850px) {
+    .product-container {
+        flex-direction: column;
+    }
+}
+
+/* staff section */
+
+.staff {
+    background-color: white;
+    text-align: center;
+    padding: 5% 3%;
+}
+
+.staff-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3%;
+}
+
+.staff-container .box {
+    background-color: orange; 
+}
+
+.staff-container .box img {
+    width: 100%;
+    height: 80%;
+}
+
+@media only screen and (max-width: 850px) {
+    .staff-container {
+        flex-direction: column;
+    }
+}
+
+footer {
+    height: 2rem;
+    background-color: black;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer p {
+    color: orange;
+    font-size: 0.8rem;
+}
